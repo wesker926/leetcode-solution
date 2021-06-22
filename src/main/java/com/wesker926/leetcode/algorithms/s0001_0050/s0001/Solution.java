@@ -1,4 +1,4 @@
-package com.wesker926.leetcode.algorithms.s0001_0050.solution0001;
+package com.wesker926.leetcode.algorithms.s0001_0050.s0001;
 
 import java.util.HashMap;
 import java.util.Map;
