@@ -1,4 +1,4 @@
-package com.wesker926.leetcode.algorithms.s0751_0800.s0773;
+package com.wesker926.leetcode.algorithms.s0751to0800.s0773;
 
 import java.util.*;
 

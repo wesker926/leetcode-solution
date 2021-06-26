@@ -1,4 +1,4 @@
-package com.wesker926.leetcode.lcof.s0001_0050.s0038;
+package com.wesker926.leetcode.lcof.s0001to0050.s0038;
 
 import java.util.Arrays;
 import java.util.LinkedList;

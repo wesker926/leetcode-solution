@@ -1,4 +1,4 @@
-package com.wesker926.leetcode.algorithms.s0001_0050.s0021;
+package com.wesker926.leetcode.algorithms.s0001to0050.s0021;
 
 /**
  * @author wesker.gh
