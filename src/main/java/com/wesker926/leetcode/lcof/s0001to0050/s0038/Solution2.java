@@ -7,9 +7,12 @@ import java.util.List;
 /**
  * @author wesker.gh
  * @date 2021/6/22
- * @description 剑指 Offer 38. 字符串的排列 - 回溯剪枝
+ * @description 剑指 Offer 38. 字符串的排列
  */
 public class Solution2 {
+    /**
+     * 回溯剪枝
+     */
     public String[] permutation(String s) {
         if (s == null || s.length() == 0) {
             return new String[0];
