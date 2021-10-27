@@ -78,6 +78,6 @@ public class Solution {
                 }
             }
         }
-        return true;
+        return count == 0;
     }
 }
