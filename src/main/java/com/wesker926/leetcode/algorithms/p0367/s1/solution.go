@@ -4,8 +4,6 @@
 // @description: 二分
 package s1
 
-import "fmt"
-
 func isPerfectSquare(num int) bool {
 	if num == 1 {
 		return true
@@ -17,8 +15,8 @@ func isPerfectSquare(num int) bool {
 
 	l, r, m, s := 2, num/2, 0, 0
 	for l <= r {
+		// go语言中，int在64位系统下是int64
 		m = l + (r-l)/2
-		fmt.Println(m)
 		s = m * m
 		if num == s {
 			return true
