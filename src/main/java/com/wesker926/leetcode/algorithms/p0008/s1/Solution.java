@@ -1,13 +1,13 @@
-package com.wesker926.leetcode.lcof.p067.s1;
+package com.wesker926.leetcode.algorithms.p0008.s1;
 
 /**
  * @author wesker.gh
- * @date 2022/4/19
- * @description 遍历解析（同主站-p0008）
+ * @date 2022/4/21
+ * @description 遍历解析（同lcof-p067）
  */
 public class Solution {
-    public int strToInt(String str) {
-        char[] cs = str.toCharArray();
+    public int myAtoi(String s) {
+        char[] cs = s.toCharArray();
         int ans = 0, sign = 1, idx = 0, max = Integer.MAX_VALUE / 10;
 
         for (; idx < cs.length && cs[idx] == ' '; idx++) {

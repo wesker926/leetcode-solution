@@ -3,7 +3,7 @@ package com.wesker926.leetcode.algorithms.p0003.s1;
 /**
  * @author wesker.gh
  * @date 2022/4/20
- * @description 双指针
+ * @description 双指针（同lcof-p048）
  */
 public class Solution {
     public int lengthOfLongestSubstring(String s) {

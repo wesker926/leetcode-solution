@@ -1,7 +1,7 @@
 // Package s1
 // @author: wesker.gh
 // @date: 2022/4/7
-// @description: DP
+// @description: DP（同主站-p0010）
 package s1
 
 func isMatch(s string, p string) bool {
