@@ -21,7 +21,7 @@ public class Solution {
         return head.next;
     }
 
-    public class ListNode {
+    private static class ListNode {
 
         int val;
 
