@@ -3,7 +3,7 @@ package com.wesker926.leetcode.lcof.p053_1.s1;
 /**
  * @author wesker.gh
  * @date 2022/4/16
- * @description 两次二分
+ * @description 两次二分（同主站-p0034）
  */
 public class Solution {
     public int search(int[] nums, int target) {
