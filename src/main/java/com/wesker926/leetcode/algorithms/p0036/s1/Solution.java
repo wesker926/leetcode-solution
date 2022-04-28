@@ -7,17 +7,14 @@ package com.wesker926.leetcode.algorithms.p0036.s1;
  */
 public class Solution {
     public boolean isValidSudoku(char[][] board) {
-        int n = board.length;
-        int[] row = new int[9], col = new int[9], block = new int[9];
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
+        int[][] cache = new int[3][9];
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0, k; j < 9; j++) {
                 if (board[i][j] == '.') {
                     continue;
                 }
-                int t = board[i][j] - '0';
-                if (!checkAndMark(row, i, t) ||
-                        !checkAndMark(col, j, t) ||
-                        !checkAndMark(block, (i / 3) * 3 + j / 3, t)) {
+                k = (i / 3) * 3 + j / 3;
+                if (!checkAndMark(cache, i, j, k, board[i][j] - '1')) {
                     return false;
                 }
             }
@@ -25,11 +22,14 @@ public class Solution {
         return true;
     }
 
-    private boolean checkAndMark(int[] arr, int idx, int bit) {
-        if ((arr[idx] & (1 << bit)) != 0) {
+    private boolean checkAndMark(int[][] cache, int i, int j, int k, int digit) {
+        int bit = 1 << digit;
+        if ((cache[0][i] & bit) != 0 || (cache[1][j] & bit) != 0 || (cache[2][k] & bit) != 0) {
             return false;
         }
-        arr[idx] |= 1 << bit;
+        cache[0][i] |= bit;
+        cache[1][j] |= bit;
+        cache[2][k] |= bit;
         return true;
     }
 }
