@@ -1,7 +1,7 @@
 // Package s1
 // @author: wesker.gh
 // @date: 2022/4/8
-// @description: 螺旋遍历
+// @description: 螺旋遍历（同主站-p0054）
 package s1
 
 func spiralOrder(matrix [][]int) []int {
