@@ -3,7 +3,7 @@ package com.wesker926.leetcode.lcof.p010_2.s1;
 /**
  * @author wesker.gh
  * @date 2022/3/29
- * @description DP
+ * @description DP（同主站-p0070）
  */
 public class Solution {
 

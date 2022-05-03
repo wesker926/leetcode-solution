@@ -1,7 +1,7 @@
 // Package s1
 // @author: wesker.gh
 // @date: 2022/4/7
-// @description: 遍历判断
+// @description: 遍历判断（同主站-p0065）
 package s1
 
 import (
