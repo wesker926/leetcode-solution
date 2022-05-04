@@ -3,7 +3,7 @@ package com.wesker926.leetcode.lcof.p062.s1;
 /**
  * @author wesker.gh
  * @date 2022/4/19
- * @description DP + 递归
+ * @description DP + 递归（同主站-p1823）
  * f(n) = (f(n - 1) + m) % n
  */
 public class Solution {
