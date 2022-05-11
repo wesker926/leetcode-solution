@@ -1,14 +1,13 @@
-package com.wesker926.leetcode.lcof.p037.s1;
+package com.wesker926.leetcode.algorithms.p0449.s1;
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Objects;
 import java.util.Queue;
 
 /**
  * @author wesker.gh
- * @date 2022/4/14
- * @description 队列
+ * @date 2022/5/11
+ * @description 通用二叉树 - 队列迭代法
  */
 public class Solution {
 
@@ -57,8 +56,11 @@ public class Solution {
     }
 
     private static class TreeNode {
+
         int val;
+
         TreeNode left;
+
         TreeNode right;
 
         TreeNode(int x) {
