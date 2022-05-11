@@ -15,7 +15,7 @@ public class Solution {
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
         StringBuilder sb = new StringBuilder();
-        preOrder(sb, root);
+        preorder(sb, root);
         return sb.length() == 0 ? "" : sb.deleteCharAt(sb.length() - 1).toString();
     }
 
@@ -29,11 +29,11 @@ public class Solution {
         return construct(queue, Integer.MAX_VALUE, Integer.MIN_VALUE);
     }
 
-    private void preOrder(StringBuilder sb, TreeNode node) {
+    private void preorder(StringBuilder sb, TreeNode node) {
         if (node != null) {
             sb.append(node.val).append(',');
-            preOrder(sb, node.left);
-            preOrder(sb, node.right);
+            preorder(sb, node.left);
+            preorder(sb, node.right);
         }
     }
 
