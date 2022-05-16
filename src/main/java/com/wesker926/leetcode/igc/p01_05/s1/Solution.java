@@ -1,4 +1,4 @@
-package com.wesker926.leetcode.igc.p01_05;
+package com.wesker926.leetcode.igc.p01_05.s1;
 
 /**
  * @author wesker.gh
