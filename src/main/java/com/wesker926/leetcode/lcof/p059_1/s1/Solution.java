@@ -7,6 +7,7 @@ import java.util.LinkedList;
  * @author wesker.gh
  * @date 2022/4/18
  * @description 有序双向队列
+ * 同主站-p0239
  */
 public class Solution {
     @SuppressWarnings("all")
