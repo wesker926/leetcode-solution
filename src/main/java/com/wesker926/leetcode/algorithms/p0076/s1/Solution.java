@@ -22,15 +22,9 @@ public class Solution {
                 total--;
             }
             have[c1]++;
-            for (c2 = s.charAt(i); total <= 0 || need[c2] == 0; i++, c2 = s.charAt(i)) {
+            for (c2 = s.charAt(i); have[c2] > need[c2] || need[c2] == 0; i++, c2 = s.charAt(i)) {
                 if (need[c2] == 0) {
                     continue;
-                }
-                if (have[c2] <= need[c2]) {
-                    if (total == 0) {
-                        break;
-                    }
-                    total++;
                 }
                 have[c2]--;
             }
