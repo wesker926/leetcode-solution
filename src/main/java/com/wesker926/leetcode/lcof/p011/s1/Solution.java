@@ -4,6 +4,7 @@ package com.wesker926.leetcode.lcof.p011.s1;
  * @author wesker.gh
  * @date 2022/3/30
  * @description 二分
+ * 同主站-p0154
  */
 public class Solution {
     public int minArray(int[] numbers) {
