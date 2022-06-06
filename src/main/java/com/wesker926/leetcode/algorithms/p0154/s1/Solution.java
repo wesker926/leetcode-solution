@@ -16,7 +16,7 @@ public class Solution {
             } else if (nums[m] < nums[r]) {
                 r = m;
             } else {
-                // 如果nums[m]小于nums[r]，那么我们可以放心的把r丢掉（l < r所以m != r）
+                // 如果nums[m]等于nums[r]，那么我们可以放心的把r丢掉（l < r所以m != r）
                 r--;
             }
         }
