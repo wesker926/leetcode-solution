@@ -7,6 +7,7 @@ import java.util.Map;
  * @author wesker.gh
  * @date 2022/4/2
  * @description MAP
+ * 也可排序后双指针，参考主站-p0167
  */
 public class Solution {
     public int[] twoSum(int[] nums, int target) {

@@ -4,6 +4,7 @@ package com.wesker926.leetcode.algorithms.p0167.s1;
  * @author wesker.gh
  * @date 2022/6/7
  * @description 双指针
+ * 第一个问题版本在主站-p0001
  */
 public class Solution {
     public int[] twoSum(int[] numbers, int target) {
