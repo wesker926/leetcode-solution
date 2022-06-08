@@ -4,6 +4,7 @@ package com.wesker926.leetcode.algorithms.p1037.s1;
  * @author wesker.gh
  * @date 2022/6/8
  * @description 内积计算
+ * 化简后和外积计算一样
  */
 public class Solution {
     public boolean isBoomerang(int[][] points) {
