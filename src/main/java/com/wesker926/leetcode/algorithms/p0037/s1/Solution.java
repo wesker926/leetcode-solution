@@ -30,7 +30,7 @@ public class Solution {
         while (isModify) {
             isModify = false;
             for (int i = 0; i < 9; i++) {
-                for (int j = 0, k, t; j < 9; j++) {
+                for (int j = 0, k; j < 9; j++) {
                     if (board[i][j] != '.') {
                         continue;
                     }

@@ -11,7 +11,8 @@ import java.util.List;
  */
 public class Solution {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        Arrays.sort(candidates);
+        // 无需排序
+        // Arrays.sort(candidates);
         return dfs(new LinkedList<>(), candidates, new int[candidates.length], 0, target);
     }
 
