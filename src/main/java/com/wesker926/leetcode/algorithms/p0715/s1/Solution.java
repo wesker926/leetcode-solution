@@ -12,12 +12,14 @@ import java.util.TreeMap;
  */
 public class Solution {
 
+    private static final int RIGHT_LIMIT = (int) 1e9 + 1;
+
     private final TreeMap<Integer, Boolean> map;
 
     public Solution() {
         map = new TreeMap<>();
         map.put(0, false);
-        map.put((int) 1e9 + 1, false);
+        map.put(RIGHT_LIMIT, false);
     }
 
     public void addRange(int left, int right) {
@@ -44,8 +46,9 @@ public class Solution {
     }
 
     private void modifyRange(int left, int right, boolean val) {
-        int stop = (int) 1e9 + 1;
+        int stop = RIGHT_LIMIT;
         List<Integer> delete = new ArrayList<>();
+        boolean preLeftVal = map.get(map.lowerKey(left));
         boolean preRightVal = map.get(map.lowerKey(right));
         for (Map.Entry<Integer, Boolean> entry : map.tailMap(left).entrySet()) {
             if (entry.getKey() >= right) {
@@ -57,9 +60,22 @@ public class Solution {
         for (int key : delete) {
             map.remove(key);
         }
-        map.put(left, val);
+        if (preLeftVal != val) {
+            map.put(left, val);
+        }
         if (stop != right) {
             map.put(right, preRightVal);
+        }
+
+        delete.clear();
+        for (Map.Entry<Integer, Boolean> entry : map.tailMap(right).entrySet()) {
+            if (entry.getKey() == RIGHT_LIMIT || entry.getValue() != val) {
+                break;
+            }
+            delete.add(entry.getKey());
+        }
+        for (Integer key : delete) {
+            map.remove(key);
         }
     }
 }
