@@ -4,6 +4,7 @@ package com.wesker926.leetcode.algorithms.p0031.s1;
  * @author wesker.gh
  * @date 2022/4/27
  * @description 扫描
+ * 关联 主站-p0556
  */
 public class Solution {
     public void nextPermutation(int[] nums) {
