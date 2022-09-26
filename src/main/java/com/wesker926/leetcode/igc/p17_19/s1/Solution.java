@@ -4,6 +4,7 @@ package com.wesker926.leetcode.igc.p17_19.s1;
  * @author wesker.gh
  * @date 2022/9/26
  * @description 原地hash
+ * 还有异或解法，求和解法
  */
 public class Solution {
     public int[] missingTwo(int[] nums) {
