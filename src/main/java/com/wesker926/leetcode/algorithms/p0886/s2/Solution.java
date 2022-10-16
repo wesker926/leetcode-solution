@@ -10,6 +10,7 @@ import java.util.List;
  * 普通并查集：将i不喜欢的数合并，然后检查i是否和不喜欢的数连接
  */
 public class Solution {
+    @SuppressWarnings("all")
     public boolean possibleBipartition(int n, int[][] dislikes) {
         Union u = new Union(n);
         List<Integer>[] graph = new List[n + 1];
