@@ -4,7 +4,7 @@ package com.wesker926.leetcode.algorithms.p2335.s1;
  * @author wesker.gh
  * @date 2023/2/11
  * @description 数学
- * 跟主站-p1753一样
+ * 跟主站-p1753是同类问题
  */
 public class Solution {
     public int fillCups(int[] amount) {
