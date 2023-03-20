@@ -7,7 +7,7 @@ import java.util.List;
  * @author wesker.gh
  * @date 2023/3/20
  * @description 组合数迭代
- * 用阶乘算出不重复数字的组合数x，然后用总数减去，n + 1 - x
+ * 自己写的：用阶乘算出不重复数字的组合数x，然后用总数减去，n + 1 - x
  */
 public class Solution {
     public int numDupDigitsAtMostN(int n) {
