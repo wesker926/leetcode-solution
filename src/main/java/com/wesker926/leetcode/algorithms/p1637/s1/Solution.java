@@ -4,7 +4,7 @@ package com.wesker926.leetcode.algorithms.p1637.s1;
  * @author wesker.gh
  * @date 2023/3/30
  * @description 分桶
- * 分桶可以实现O(n)复杂度
+ * 分桶可以实现O(n)复杂度，这题用桶是不需要完全排序的，仅需分桶。
  * n+1个桶，当max != min时，至少存在两个桶有数据。
  * 桶内记录当前范围的max和min。
  * ans为max(ans, cur_min - pre_max)。
