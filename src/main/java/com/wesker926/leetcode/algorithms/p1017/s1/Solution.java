@@ -8,7 +8,8 @@ package com.wesker926.leetcode.algorithms.p1017.s1;
  * 因此遇到奇数位的1就在高一位上加1即可
  * <p>
  * 也可以用进制转换的思路去做
- * 十进制转负二进制，取余除-2
+ * 十进制转负二进制，去余除-2
+ * 注意负数进制转换时，去余的动作不可省略
  */
 public class Solution {
     public String baseNeg2(int n) {
