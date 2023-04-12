@@ -3,7 +3,7 @@ package com.wesker926.leetcode.algorithms.p1147.s2;
 /**
  * @author wesker.gh
  * @date 2023/4/12
- * @description TODO
+ * @description 贪心
  */
 public class Solution {
     public int longestDecomposition(String text) {
