@@ -3,6 +3,7 @@
 // @date: 2023/4/24
 // @description: 后缀数组
 // go语言自带后缀数组SA-IS算法实现
+// https://zhuanlan.zhihu.com/p/338547483
 package s1
 
 import (
