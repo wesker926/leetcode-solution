@@ -8,21 +8,17 @@ package com.wesker926.leetcode.algorithms.p0117.s1;
  */
 public class Solution {
     public Node connect(Node root) {
-        for (Node cur = root, nxtFirst = new Node(), nxt = nxtFirst; cur != null; ) {
+        for (Node cur = root, nxtHead = new Node(), nxt = nxtHead; cur != null; ) {
             if (cur.left != null || cur.right != null) {
-                if (cur.left != null && cur.right != null) {
-                    cur.left.next = cur.right;
-                }
+                if (cur.left != null && cur.right != null) cur.left.next = cur.right;
                 nxt.next = cur.left != null ? cur.left : cur.right;
                 nxt = cur.right != null ? cur.right : cur.left;
             }
-
-            if (cur.next != null) {
-                cur = cur.next;
-            } else {
-                cur = nxtFirst.next;
-                nxtFirst.next = null;
-                nxt = nxtFirst;
+            if (cur.next != null) cur = cur.next;
+            else {
+                cur = nxtHead.next;
+                nxtHead.next = null;
+                nxt = nxtHead;
             }
         }
         return root;
