@@ -10,21 +10,18 @@ import java.util.Map;
  */
 public class Solution {
     public int maxProduct(String[] words) {
-        int bit, max = 0;
-        Map<Integer, Integer> map = new HashMap<>();
-        for (String w : words) {
-            bit = 0;
-            for (char c : w.toCharArray()) {
-                bit |= (1 << (c - 'a'));
-            }
-            map.put(bit, Math.max(map.getOrDefault(bit, 0), w.length()));
+        int ans = 0;
+        Map<Integer, Integer> m = new HashMap<>();
+        for (String word : words) {
+            int key = 0, len = word.length();
+            for (char ch : word.toCharArray()) key |= 1 << (ch - 'a');
+            if (!m.containsKey(key) || m.get(key) < len) m.put(key, len);
         }
-
-        for (Map.Entry<Integer, Integer> e1 : map.entrySet()) {
-            for (Map.Entry<Integer, Integer> e2 : map.entrySet()) {
-                max = Math.max(max, (e1.getKey() & e2.getKey()) != 0 ? 0 : e1.getValue() * e2.getValue());
+        for (int k1 : m.keySet()) {
+            for (int k2 : m.keySet()) {
+                if ((k1 & k2) == 0) ans = Math.max(ans, m.get(k1) * m.get(k2));
             }
         }
-        return max;
+        return ans;
     }
 }
