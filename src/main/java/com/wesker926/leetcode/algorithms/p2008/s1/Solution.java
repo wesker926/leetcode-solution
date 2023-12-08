@@ -24,9 +24,8 @@ public class Solution {
             weight[idx++] = ride[2];
         }
 
-        long nxtMax = dp[n];
-        for (int i = n - 1, j; i >= 0; nxtMax = Math.max(nxtMax, dp[i--])) {
-            for (dp[i] = nxtMax, j = head[i]; j >= 0; j = next[j]) {
+        for (int i = n - 1, j; i >= 0; i--) {
+            for (dp[i] = dp[i + 1], j = head[i]; j >= 0; j = next[j]) {
                 dp[i] = Math.max(dp[i], dp[edge[j]] + edge[j] - i + weight[j]);
             }
         }
