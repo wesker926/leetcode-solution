@@ -3,9 +3,9 @@ package com.wesker926.leetcode.algorithms.p2397.s1;
 /**
  * @author wesker.gh
  * @date 2024/1/4
- * @description 二进制枚举的 Gosper's Hack 优化
- * Gosper's Hack 即找到二进制串中从低到高第一个遇到的01，将它变为10，就是下一个组合
- * 如101 -> 110
+ * @description 二进制枚举的 next_permutation优化
+ * Gosper's Hack 即找到二进制串中从低到高第一个遇到的01，将它变为10，就是下一个组合。如101 -> 110。
+ * 本题没使用标准的算法，只使用了简单的下一个算法，标准算法见p2859。
  */
 public class Solution {
     public int maximumRows(int[][] matrix, int numSelect) {
